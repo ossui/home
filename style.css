@@ -116,7 +116,7 @@ tr:hover {
   font-family: Helvetica, Arial, sans-serif;
 }
 .menu a, .menu a:visited {
-  color: #c40000;         /***** Menu items *****/
+  color: #ffe599;         /***** Menu items *****/
 }
 .menu a:hover, .menu a:target {
   color: #ebebeb;
