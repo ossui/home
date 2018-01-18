@@ -97,6 +97,18 @@ tr:hover {
   line-height: 20px;
 }
 
+.navlogo {
+	width: 100px;
+	height: 40px;
+	display: inline-block;
+	margin-right: 10px;
+	float: left;
+	position: relative;
+	top: 5px;
+	left: 30px;
+	background: transparent url('ossui-navlogo') center top no-repeat;
+}
+
 .menu {
   width: 90%;
   max-width: 960px;
