@@ -2,6 +2,11 @@
 /* CSS Document */
 
 /* Color Palette
+Maroon: #660000
+Gold: #FFE599
+Black: #232426
+Grey: #262626
+White: #000
 */
 
 .main {
@@ -44,23 +49,9 @@ a:visited {
 	color: #262626;
 }
 a:hover {
-	color: #ffb310;
-}
-dt {
-	font-family: Helvetica, sans-serif;
-	padding: .7em 0;
-	font-weight: bold;
-	font-size: 20px;
-}
-dd {
-	font-family: Helvetica, sans-serif;
-	line-height: 1.5em;
+	color: #ffe599;
 }
 
-.medium{
-	width: 310px;
-	height: 210px;
-}
 
 .content p {
 	line-height: 1.75em;
@@ -71,10 +62,6 @@ tr:hover {
 	background-color: rgba(242,242,242,0.4);
 }
 
-.small {
-	width: 100;
-	height: 70;
-}
 
 .ital {
 	font-style: italic;
