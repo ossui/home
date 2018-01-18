@@ -4,6 +4,14 @@
 /* Color Palette
 */
 
+.main {
+	max-width: 960px;
+	margin: 0px auto;
+	padding: 30px;
+	background-color: rgba(217,217,217,0.4);
+	margin-top: 20px;
+}
+
 h1, h2, h3 {
 	font-family: Helvetica, sans-serif;
 }
