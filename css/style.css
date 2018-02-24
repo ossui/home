@@ -124,7 +124,7 @@ a:hover {
 	position: relative;
 	top: 5px;
 	left: 30px;
-	background: transparent url('../img/ossui-navlogo.png') center top no-repeat;
+	background: transparent url('../img/ossui-navlogo.PNG') center top no-repeat;
 }
 
 .menu {
@@ -151,4 +151,58 @@ a:hover {
 }
 .menu-items a {
   text-decoration: none;
+}
+
+.mySlides {
+	display:none;
+	background-color: rgba(217,217,217,0.4);
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 960px;
+  max-height: 600px;
+  position: relative;
+  margin: auto;
+}
+
+/* Slideshow indicators */
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 1px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  position: relative;
+  top: -15px;
+}
+
+.about-slideshow-container {
+	width: 30%;
+	height: 30%;
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+}
+
+.aboutSlides {
+	display: none;
+	width: 100%;
+}
+
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	margin-top: -22px;
+	padding: 16px;
+	color: #ffb310;
+	font-weight: bold;
+	font-size: 22px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
 }
