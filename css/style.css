@@ -124,7 +124,7 @@ a:hover {
 	position: relative;
 	top: 5px;
 	left: 30px;
-	background: transparent url('../img/ossui-navlogo.png') center top no-repeat;
+	background: transparent url('../img/ossui-navlogo.PNG') center top no-repeat;
 }
 
 .menu {
@@ -160,6 +160,13 @@ a:hover {
 	padding-right: 5px;
 }
 
+.homeSlides {
+	display: none;
+	background-color: rgba(217,217,217,0.4);
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
 /* Slideshow container */
 .slideshow-container {
   max-width: 960px;
@@ -181,28 +188,37 @@ a:hover {
   top: -15px;
 }
 
-.about-slideshow-container {
-	width: 30%;
-	height: 30%;
-	max-width: 1000px;
-	position: relative;
-	margin: auto;
-}
-
-.aboutSlides {
-	display: none;
-	width: 100%;
-}
-
-.prev, .next {
+.slideButton {
+	border: none;
+	display: inline-block;
+	padding: 8px 16px;
+	vertical-align: middle;
+	overflow: hidden;
+	text-decoration: none;
+	color: inherit;
+	background-color: inherit;
+	text-align: center;
 	cursor: pointer;
+	white-space: nowrap;
+}
+
+.slideButtonColor, .slideButtonColor:hover {
+	color: #ffe599!important;
+	background-color: #232426!important;
+}
+
+.slideButtonLeft {
 	position: absolute;
 	top: 50%;
-	margin-top: -22px;
-	padding: 16px;
-	color: #ffb310;
-	font-weight: bold;
-	font-size: 22px;
-	transition: 0.6s ease;
-	border-radius: 0 3px 3px 0;
+	left: 0%;
+	transform: translate(0%,-50%);
+	-ms-transform: translate(-0%,-50%);
+}
+
+.slideButtonRight {
+	position: absolute;
+	top: 50%;
+	right: 0%;
+	transform: translate(0%,-50%);
+	-ms-transform: translate(0%,-50%);
 }
