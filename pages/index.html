@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="">
 	<head>
 		<meta charset="utf-8" />
 		<meta name="keywords" content="OSSUI, Open Source Security UI, User Interface, Security, IDS" />
@@ -8,6 +8,7 @@
 		<title>OSSUI | Home</title>
 		<meta name="viewport" content="initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="../css/style.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.min.js"></script>
 	</head>
  <body>
 	<nav class="fixed-nav-bar">
@@ -30,55 +31,24 @@
 	</nav> <!-- End nav-bar -->
 		
 	<div class="main">
-		
-		<div class="slideshow-container">
-			<div class="mySlides">
-				<img src="../img/ossui-logo-notext-lrg.png" style="width:100%" alt="Logo">
-			</div>
-			<div class="mySlides">
-				<img src="../img/ossui-logo-mk2-lrg.png" style="width:100%" alt="Full Logo">
-			</div>
-
-			<div class="mySlides">
-				<img src="../img/ossui-logo-banner-lrg.png" style="width:100%" alt="Features">
-			</div>
-		</div> <!-- End slideshow-container -->
-		<br>
-
-		<div style="text-align:center">
-			<span class="dot"></span> 
-			<span class="dot"></span> 
-			<span class="dot"></span> 
+		<div ng-init="banner='../img/ossui-logo-notext-lrg.png'" ng-mouseover="banner='../img/ossui-logo-banner-lrg.png'" ng-mouseout="banner='../img/ossui-logo-mk2-lrg.png'">
+			<img ng-src="{{banner}}" style="width:100%"/>
 		</div>
 
-		<script src="../js/slideshow.js" type="text/JavaScript"></script>
+		<br>
 		
 		<h1>OSSUI Home Page</h1>
 		
 		<hr>
 
 		<div class="content">
-			<div class="slideshow-container">
-				<div class="homeSlides">
-					<img src="../img/ossui-question.png" style="width:100%" alt="What is OSSUI?">
-				</div>
-				<div class="homeSlides">
-					<img src="../img/ossui-answer2.png" style="width:100%" alt="Answer">
-				</div>
-				<div class="homeSlides">
-					<img src="../img/ossui-answer1.png" style="width:100%" alt="Answer2">
-				</div>
-				<button class="slideButton slideButtonColor slideButtonLeft" onclick="plusDivs(-1)">&#10094;</button>
-				<button class="slideButton slideButtonColor slideButtonRight" onclick="plusDivs(1)">&#10095;</button>
-			</div> <!-- End slideshow-container 2 -->
+			<div class="info" ng-init="imgsrc='../img/ossui-question.png'" ng-mouseover="imgsrc='../img/ossui-answer2.png'" ng-mouseout="imgsrc='../img/ossui-question.png'">
+				<img ng-src="{{imgsrc}}" style="width:100%"/>
+			</div>
 
-			<script src="../js/home-slideshow.js" type="text/JavaScript"></script>
-
-			<br>
-
-			<img src="../img/ossui-home-features.png" style="width:100%" alt="OSSUI features">
-			
-			<br>
+			<div class="info" ng-init="imgsrc2='../img/ossui-home-features.png'" ng-mouseover="imgsrc2='../img/ossui-answer1.png'" ng-mouseout="imgsrc2='../img/ossui-home-features.png'">
+				<img ng-src="{{imgsrc2}}" style="width:100%"/>
+			</div>
 			
 			<br>
 
@@ -105,5 +75,6 @@
 			<p>Created by Ryan Yap for IFT 402 @ Arizona State University 2018</p> 
 		</div> <!-- End footer -->
 	</div> <!-- End main -->
+	
   </body>
 </html>

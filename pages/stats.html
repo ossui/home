@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="">
 	<head>
 		<meta charset="utf-8" />
 		<meta name="keywords" content="OSSUI, Open Source Security UI, User Interface, Security, IDS" />
@@ -7,6 +7,7 @@
 		<link rel="icon" href="../img/favicon.PNG">
 		<title>OSSUI | Stats</title>
 		<link rel="stylesheet" type="text/css" href="../css/style.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.min.js"></script>
 	</head>
  <body>
 	<nav class="fixed-nav-bar">
@@ -37,16 +38,47 @@
 		<h1>Cybersecurity Statistics</h1>
 		
 		<hr>
-		<p>
-			The statistics below were collected by Symantec in their <a target="_blank" href="https://www.symantec.com/security-center/threat-report">April 2017 Internet Security Threat Report (ISTR)</a>.
-		</p>
-		<img src="../img/ossui-stats1.png" style="width:100%" alt="Stats1">
-		<img src="../img/ossui-stats2.png" style="width:100%" alt="Stats2">
-		<img src="../img/ossui-stats3.png" style="width:100%" alt="Stats3">
-		<img src="../img/ossui-stats4.png" style="width:100%" alt="Stats4">
-		<img src="../img/ossui-stats5.png" style="width:100%" alt="Stats5">
-		<img src="../img/ossui-stats6.png" style="width:100%" alt="Stats6">
-		
+
+		<div class="info" ng-init="stat1='../img/statq1.png'" ng-mouseover="stat1='../img/stata1.png'" ng-mouseout="stat1='../img/statq1.png'">
+			<img ng-src="{{stat1}}"/>
+		</div>
+
+		<div class="info" ng-init="stat2='../img/statq2.png'" ng-mouseover="stat2='../img/stata2.png'" ng-mouseout="stat2='../img/statq2.png'">
+			<img ng-src="{{stat2}}"/>
+		</div>
+
+		<br>
+
+		<div class="info" ng-init="stat4='../img/statq4.png'" ng-mouseover="stat4='../img/stata4.png'" ng-mouseout="stat4='../img/statq4.png'">
+			<img ng-src="{{stat4}}"/>
+		</div>
+
+		<div class="info" ng-init="stat6='../img/statq6.png'" ng-mouseover="stat6='../img/stata6.png'" ng-mouseout="stat6='../img/statq6.png'">
+			<img ng-src="{{stat6}}"/>
+		</div>
+
+		<br>
+
+		<div class="info" ng-init="stat3='../img/statq3.png'" ng-mouseover="stat3='../img/stata3.png'" ng-mouseout="stat3='../img/statq3.png'">
+			<img ng-src="{{stat3}}"/>
+		</div>
+
+		<div class="info" ng-init="stat5='../img/statq5.png'" ng-mouseover="stat5='../img/stata5.png'" ng-mouseout="stat5='../img/statq5.png'">
+			<img ng-src="{{stat5}}"/>
+		</div>
+
+		<br>
+
+		<div class="info" ng-init="stat7='../img/statq7.png'" ng-mouseover="stat7='../img/stata7.png'" ng-mouseout="stat7='../img/statq7.png'">
+			<img ng-src="{{stat7}}"/>
+		</div>
+
+		<div class="info" ng-init="stat8='../img/statq8.png'" ng-mouseover="stat8='../img/stata8.png'" ng-mouseout="stat8='../img/statq8.png'">
+			<img ng-src="{{stat8}}"/>
+		</div>
+
+		<br>
+
 		<p>See what you can do on our <a href="services.html">Services</a> page or visit the <a href="download.html">Downloads</a> page.</p>
 
 		<div class="footer">
