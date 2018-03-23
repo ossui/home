@@ -173,6 +173,7 @@ a:hover {
   max-height: 600px;
   position: relative;
   margin: auto;
+  width: 100%;
 }
 
 /* Slideshow indicators */
@@ -221,4 +222,12 @@ a:hover {
 	right: 0%;
 	transform: translate(0%,-50%);
 	-ms-transform: translate(0%,-50%);
+}
+
+.info {
+	padding: 30px;
+	width: 420px;
+	height: 240px;
+	display: inline-block;
+	float: left;
 }
