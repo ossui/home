@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" lang="en" ng-app="">
 	<head>
 		<meta charset="utf-8" />
 		<meta name="keywords" content="OSSUI, Open Source Security UI, User Interface, Security, IDS" />
@@ -7,6 +7,7 @@
 		<link rel="icon" href="../img/favicon.PNG">
 		<title>OSSUI | Download</title>
 		<link rel="stylesheet" type="text/css" href="../css/style.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.min.js"></script>
 	</head>
  <body>
 	<nav class="fixed-nav-bar">
@@ -34,20 +35,75 @@
 
 		<br>
 		
-		<h1>OSSUI Download Page</h1>
+		<h1>OSSUI Download & Installation</h1>
 		
 		<hr>
 		
+		
 		<div class="content">
+			<h2>Supported Systems</h2>
 
-			<p>Below you will find the download links to both the OSSUI project (direct download) and the OSSEC host-based intrusion detection system (HIDS).
-			</p>
+			<ul class="bullet">
+				<li>Ubuntu Linux</li>
+				<li>RHEL</li>
+				<li>Debian Linux</li>
+			</ul>
 
-			<a href="https://github.com/ossui/project/raw/master/ossui.zip"><img src="../img/ossui-download.png" style="width:100%" alt="OSSUI download"></a>
+			<h2>Downloads</h2>
 
-			<a target="_blank" href="https://ossec.github.io"><img src="../img/ossec-download.png" style="width:100%" alt="OSSEC download"></a>
+			<div class="info" ng-init="download1='../img/ossui-download1.png'" ng-mouseover="download1='../img/ossui-download2.png'" ng-mouseout="download1='../img/ossui-download1.png'">
+				<a href="https://github.com/ossui/project/raw/master/ossui.zip"><img ng-src="{{download1}}"/></a>
+			</div>
+
+			<div class="info" ng-init="download2='../img/ossec-download1.png'" ng-mouseover="download2='../img/ossec-download2.png'" ng-mouseout="download2='../img/ossec-download1.png'">
+				<a href="https://github.com/ossec/ossec-hids/archive/2.9.3.tar.gz"><img ng-src="{{download2}}"/></a>
+			</div>
+
+			<div class="info" ng-init="download3='../img/ossec-download1.png'" ng-mouseover="download3='../img/ossec-download3.png'" ng-mouseout="download3='../img/ossec-download1.png'">
+				<a href="https://github.com/ossui/project/raw/master/install.sh.zip"><img ng-src="{{download3}}"/></a>
+			</div>
+
+			<div class="info" ng-init="download4='../img/ubuntu-download1.png'" ng-mouseover="download4='../img/ubuntu-download2.png'" ng-mouseout="download4='../img/ubuntu-download1.png'">
+				<a href="https://www.ubuntu.com/download/desktop"><img ng-src="{{download4}}"/></a>
+			</div>
 			    
 			<br>
+
+			<h2>Installation Instructions</h2>
+			<ol class="number">
+				<li>Download Linux, OSSUI, OSSEC, and Installation Script</li>
+				<li>Decompress downloaded files using Archive Manager</li>
+				<li>Replace install.sh script in ossec folder</li>
+				<img src="../img/install2.png">
+				<li>Right-click Linux desktop and open terminal</li>
+				<img src="../img/install3.png">
+				<li>Execute install.sh script: ./install.sh</li>
+				<img src="../img/install5.png">
+				<li>Move to ossec folder (e.g. $ cd Downloads/ossec) and open root shell: sudo su</li>
+				<img src="../img/install1.png">
+				<li>Choose whether to enable email notifications [Y/N]</li>
+				<img src="../img/install4.png">
+				<li>From root, enter: /var/ossec/bin/ossec-control start</li>
+				<img src="../img/install6.png">
+				<li>Execute ossui setup script: /Desktop/ossui/setup.sh</li>
+				<img src="../img/install7a.png">
+				<img src="../img/install7b.png">
+				<li>Create username and password for OSSUI</li>
+				<img src="../img/install8.png">
+				<li>Open browser and navigate to localhost/ossui</li>
+				<img src="../img/install9.png">
+			</ol>
+
+			<h2>Troubleshooting</h2>
+			<ul class="bullet">
+				<li>Problem executing setup.sh: Check permissions (chmod +x setup.sh)</li>
+				<img src="../img/troubleshooting1.png">
+				<img src="../img/troubleshooting2.png">
+				<li>OSSUI alerts not appearing: Restart Linux or Apache (e.g. # service apache2 restart)</li>
+				<img src="../img/troubleshooting3.png">
+			</ul>
+			<h3>Disclaimer</h3>
+			<p>The OSSEC and Ubuntu logos are the copyright material of their respective owners.</p>
 		</div> <!--- End Content -->
 												
 		<div class="footer">
